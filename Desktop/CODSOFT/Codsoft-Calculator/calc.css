@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,700&family=Roboto+Slab:wght@200;300;400;500;600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.cont{
+    background-color: rgb(241, 210, 210);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc{
+    background-color: lightslategray;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+.calc form input{
+    border: 1px solid rgb(245, 156, 156);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    box-shadow: -5px -1px 5px rgba(201, 192, 192, 0.5), 5px 2px 15px rgba(68, 60, 60, 0.5);;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem, 0;
+   
+}
+form .display input{
+    text-align: right;
+    flex: auto;
+    background-color: lightgray;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 600;
+}
+form input.eql{
+    color: aliceblue;
+    width: 7.3rem;
+    background-color: rgb(43, 27, 27)
+}
+form input.opt{
+    color: aliceblue;
+    background-color: rgb(43, 27, 27)
+}
+form input:hover{
+    background-color: black;
+}
+
+
+@media screen and (max-width: 400px)
+{
+    .cont{
+        width: 100%;
+        height: 100vh;
+    }
+    .calc{
+        background-color: lightslategray;
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+    .calc form input{
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        cursor: pointer;
+        margin: 0.5rem;
+
+    }
+    form .display{
+        display: flex;
+        justify-content: flex-end;
+        margin: 2rem, 0;
+    }
+    form .display input{
+        color: black;
+        font-weight: 600;
+        font-size: 1.5rem;
+        height: 7vh;
+    }
+    form input.eql{
+        color: aliceblue;
+        width: 6.3rem;
+        background-color: rgb(43, 27, 27)
+    }
+}
+@media screen and (max-width: 300px)
+{
+    .cont{
+        width: 100%;
+        height: 100vh;
+    }
+    .calc{
+        background-color: lightslategray;
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+    .calc form input{
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+        cursor: pointer;
+        margin: 0.5rem;
+    }
+    form .display input{
+        color: black;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    form input.eql{
+        width: 5.3rem;
+    }
+    
+}
+@media screen and (max-width: 800px)
+{
+    .cont{
+        width: 100%;
+        height: 100vh;
+    }
+    .calc{
+        background-color: lightslategray;
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+    .calc form input{
+        width: 5rem;
+        height: 5rem;
+        font-size: 2rem;
+        font-weight: 400;
+        color: white;
+        cursor: pointer;
+        margin: 0.5rem;
+    }
+    form .display input{
+        color: black;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+    form input.eql{
+        width: 12rem;
+    }
+}
+@media screen and (max-width: 1050px)
+{
+    .cont{
+        width: 100%;
+        height: 100%;
+    }
+    .calc{
+        background-color: lightslategray;
+        padding: rem;
+        border-radius: 1rem;
+        
+    }
+    .calc form input{
+        width: rem;
+        height: rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0.5rem;
+        
+    }
+    form .display input{
+        color: black;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+    form input.eql{
+        width: 11rem;
+    }
+    form .display input{
+        color: black;
+        font-weight: 600;
+        font-size: 6rem;
+    }
+}
